@@ -1,32 +1,32 @@
 ---
-import '../styles/global.css'
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/global.css";
 
-const pageTitle = "My Astro Learning Blog"
+const pageTitle = "My Astro Learning Blog";
 ---
 
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
-</head>
+  </head>
 
-<body>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">Blog</a>
+  <body>
+    <Header />
 
     <h1>{pageTitle}</h1>
     <p>This is where I will post about my journey learning Astro.</p>
 
     <nav>
-        <a href="/posts/post-1/">Post 1</a>
-        <a href="/posts/post-2/">Post 2</a>
-        <a href="/posts/post-3/">Post 3</a>
+      <a href="/posts/post-1/">Post 1</a>
+      <a href="/posts/post-2/">Post 2</a>
+      <a href="/posts/post-3/">Post 3</a>
     </nav>
-</body>
 
+    <Footer />
+  </body>
 </html>
